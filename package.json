@@ -1,0 +1,25 @@
+{
+    "name": "mocha-ci-driver"
+  , "version": "0.1.1"
+  , "description": "A driver for testing the same as browser and Node.js"
+  , "keywords": ["test", "mocha", "ci"]
+  , "author": "Ryunosuke SATO <tricknotes.rs@gmail.com>"
+  , "repository": {
+      "type": "git"
+    , "url": "git://github.com/tricknotes/mocha-ci-driver.git"
+  }
+  , "main": "./index"
+  , "engines": {
+      "node": ">= 0.6.0"
+  }
+  , "scripts": {
+      "test": "./node_modules/mocha/bin/mocha --colors --reporter spec test/*.test.*"
+  }
+  , "dependencies": {
+      "mocha": "1.2.0"
+    , "zombie": "1.1.6"
+  }
+  , "devDependencies": {
+      "expect.js": "0.1.2"
+  }
+}
